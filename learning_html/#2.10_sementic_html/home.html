@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Home - My first website.</title>
+  </head>
+  <body>
+    <form>
+      <!-- lable의 for와 input의 id의 값이 같게 되면 lable을 웹에서 눌렀을 때 input이 작동한다. -->
+      <!-- id는 body안의 어떤 테그에도 넣을 수있다. 그이유는 고유식별자이기 때문이다. 
+element당 하나의 id를 가질 수 있다. 테그 하나당 하나의 id를 가지며 고유해야한다. 
+html은 뼈대다. 즉, 이것을 디자인하는것은 css인데 
+css는 무언가를 가져와서 지정하는 것이다. 그러므로 이 id를 지정해서 가져와서 css에서 지정해주는 것이다. 
+그렇기에 id는 고유해야하고, id로 인해 css와 연결하는 것이다. 매우 중요하다!!-->
+      <label for="website">Website</label>
+      <input id="website" required placeholder="Name" type="url" />
+      <!-- input의 type에 text를 넣으면 text, url넣으면 rul, email넣으면 email 넣으라고한다. 엄청많다powerful! -->
+
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
