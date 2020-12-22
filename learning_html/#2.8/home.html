@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Home - My first website.</title>
+  </head>
+  <body>
+    <!-- fomr를 만들것임!!! form은 정말 많은 것들이 있음  -->
+    <form>
+      <!-- form의 양식을 만들어 줘야한다.  -->
+      <!-- input은 셀프 !! 즉 무언가를 넣는 것임  -->
+      <!-- <input type="color" /> -->
+      <!-- required는 비어있으면 경고가 나오게 해준다. It's so cool!  -->
+      <input type="file" accept=".pdf" />
+      <!-- pdf 파일만 업로두할수있게 해준다.  -->
+      <input type="file" accept="image/" />
+      <!-- 그림파일이면 뭐든지 괜찮다는 것임 -->
+      <input type="file" accept="image/,.pdf" />
+
+      <input required placeholder="Name" type="text" />
+      <input required placeholder="Last Name" disabled type="text" />
+      <!-- minlegnth : 최소한의 char수 즉 글자가 10자 이상이 되어야한다는 것임.  -->
+      <input required placeholder="Username" minlength="10" type="text" />
+      <input required placeholder="Password" type="password" />
+      <!-- submit의 기본 기능은 사이트를 새로고침하는것임 -->
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
+<!-- attribute는 매우매우 강력하다!!! attribute를 어떻게  쓰는지, 어떻게 찾는지!!-->
+
+<tagname attrname="attrvalue"></tagname>
