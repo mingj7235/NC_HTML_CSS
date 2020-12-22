@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
   <head>
     <title>Home - My first website.</title>
   </head>
   <body>
-    <form>
-      <!-- lable의 for와 input의 id의 값이 같게 되면 lable을 웹에서 눌렀을 때 input이 작동한다. -->
-      <!-- id는 body안의 어떤 테그에도 넣을 수있다. 그이유는 고유식별자이기 때문이다. 
-element당 하나의 id를 가질 수 있다. 테그 하나당 하나의 id를 가지며 고유해야한다. 
-html은 뼈대다. 즉, 이것을 디자인하는것은 css인데 
-css는 무언가를 가져와서 지정하는 것이다. 그러므로 이 id를 지정해서 가져와서 css에서 지정해주는 것이다. 
-그렇기에 id는 고유해야하고, id로 인해 css와 연결하는 것이다. 매우 중요하다!!-->
-      <label for="website">Website</label>
-      <input id="website" required placeholder="Name" type="url" />
-      <!-- input의 type에 text를 넣으면 text, url넣으면 rul, email넣으면 email 넣으라고한다. 엄청많다powerful! -->
-
-      <input type="submit" value="Create Account" />
-    </form>
+      <header>
+        <h1>The Korea Times</hh1>
+      </header>
+      <main>
+        <span>span은 짤은 메세지를 위한 것</span>
+        <!-- span역시 기능은 p와 같지만, semantic tag다 -->
+        <p>p는 paragraph 즉 긴 메세지를 위한것 이것 역시 
+          span등과 기능이 같지만 긴 메세지야! 라고 알려주는 것이다.
+          html의 철학적인 내용.
+          semantic tag !!
+        </p>
+        <address>
+          여기도 역시 기능은 그냥 텍스트를 적는것이지만
+          주소를적어! 라고 말해주는것임. 
+          semantic !! 
+        </address>
+      </main>
+      <footer>
+        &copy; 2020 N.C
+      </footer>
   </body>
 </html>
+
+<!-- html문서를 만들때 이면에 있는 철학...
+  semantic을 쓰지않아도 정상적으로 작동한다. 
+  하지만 브라우저가 잘 이해할 수 있도록
+  또 내가, 함께 작업하는 작업자들이, 동료들이 확인하기 편하도록 사용하는 습관을 들이는 것이 좋다! 
+  되도록이면 이해하기 편한 html문서가 정말 좋은 문서다.
+  옛날에는 div로만 뒤덥혀있었다. div가 박스고 컨테이너니까. 
+  근데 이제는 기능은 똑같지만 의미를, 즉 알아볼 수있는 box가 있다.! 
+1) div 테그 
+전반적으로 html문서에서 제일 많이 보는 태그는 div태그다. 
+div: division div를 박스라고 생각해도된다!!!
+자연상태의 모든 테그들은 한 줄에 있게된다.
+div테그를 안에 작성하면 하나의 박스에 넣는것이다.
+<div>  여기안에 넣으면 박스에 넣는다고 생각하면댄다!! 즉, 구역이 나뉘게됨  </div> 
+이 div 박스들은 양 옆에 서로 붙어 있을 수 없다! 
+즉, 이 박스들은 위 아래로 떨어지게 된다. 
+
+<form>
+      <div>
+        <label for="website">Website</label>
+        <input id="website" required placeholder="Name" type="date" />
+      </div>
+      <div>
+        <label for="website">Website</label>
+        <input id="website" required placeholder="Name" type="date" />
+      </div>
+      <input type="submit" value="Create Account" />
+    </form>
+
+semantic tags    
+※semantic tag : 보기만해도 그 의미를 짐작할 수 있는 테그  
+2) <header> 
+  head와 완전 다른 것이다! 
+  header는 div를 대체한다. 완전히 같은 테그다. 같은 기능을 가지고 있다. 
+  다만, 박스를 만들되 헤더처럼! 글씨가 굵고 헤더가 된다. 웹사이트에 헤더가 된다. 
+  원래 <div id ="header"> 로 줬었는데, 이게 개선된것이다. 
+
+3) <main>
+  물론 이것도 <div id ="main"> 으로 써도된다. 
+  웹페이지의 메인!
+4) <footer>
+  이것도! <div id = "footer"> 가능
+  꼬리글 같은 것임
+
+  심지어 header, main, footer에 id를 안주고 다 div로만 써도된다. 하지만 이렇게 안쓰는 이유는
+  페이지를 이해할때 더욱 좋은 가독성을 위한 것이다. 
+  semantic으로 쓰는것이 훨신 페스터하다!! 더 명확하게 묘사가 가능해진다. 
+-->
