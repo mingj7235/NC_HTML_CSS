@@ -1,0 +1,15 @@
+/* CSS는 html을 가르키는 거다! point !!!!
+이렇게 가르키는 걸 selector 라고한다.
+selector를 지정하고 properties를 주는것이다. 
+그리고 그 속성들을 하나로 묶기위해서 {} 즉, 중괄호를 만들어준다.
+
+즉, html의 태그를 가져와서 selector!!
+그 selector에 원하는 properties를 {}안에 작성해주는 것이다 !
+
+ex>
+blueTitle {
+    여기에 원하는 속성들을 쓴다. 
+}
+
+
+*/

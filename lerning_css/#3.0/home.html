@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <!-- link 태그를 사용해서 href 에 css파일 이름을 적고 relationship을 stylesheet로 작성해주는것! 
+    그리고 그 css파일에 따로 스타일 코드를 적는것. 이게 두번째 방법 -->
+    <!-- <link href ="styles.css" rel ="stylesheet" /> -->
+    <style>
+      /* 여기에 css코드를 쓰면된다. 이게 첫번째 방법  
+            CSS는 html을 가르키는 거다! point !!!!
+      이렇게 가르키는 걸 selector 라고한다.
+      selector를 지정하고 properties를 주는것이다. 
+      그리고 그 속성들을 하나로 묶기위해서 {} 즉, 중괄호를 만들어준다.
+
+      즉, html의 태그를 가져와서 selector!!
+      그 selector에 원하는 properties를 {}안에 작성해주는 것이다 !
+      속성들은 엄청 많다. 엄청엄청어어어엉 
+      대신 속성들을 어떻게 쓰는지 규칙들을 배울것임 
+      규칙 
+      속성명 : 값; (그리고 속성명은 띄어쓰기가 없다!)
+      ex>
+      blueTitle {
+          여기에 원하는 속성들을 쓴다. 
+      }
+      */
+      h1 {
+        color : green;
+        text-decoration: underline;
+        font-size : 50px;
+        font-weight: 800;
+        font-style: italic;
+      }
+      address {
+        text-align: center;
+        color : tomato;
+      }
+
+    </style>
+  </head>
+  <body>
+      <header>
+        <h1>The Jay Times</hh1>
+      </header>
+      <main>
+        <span>span은 짧은 메세지를 위한 것</span>
+  
+        <p>
+        </p>
+        <address>
+          Seoul, South Korea
+        </address>
+      </main>
+      <footer>
+        &copy; 2020 N.C
+      </footer>
+  </body>
+</html>
+
+<!-- 
+어떻게 html과 css를 합치는가?
+2가지 방법이 있음
+
+1) HTML파일에 HTML코드와 css코드를 놓는방법
+  -style 태그를 넣는다. 
+    style 테그는 head 안에 있어야한다. 
+
+2) professional방법은 css와 html을 분리시킨다. 
+  link를 활용하고 rel attribute로 stylesheet를 준다. 
+
+  주로 2번의 방법을 쓴다. 
+  java의 객체화를 하는 이유처럼, link를 한줄만쓰면 반복되는 스타일을 지속적으로 사요할 수 있기 때문이다. 
+ -->
