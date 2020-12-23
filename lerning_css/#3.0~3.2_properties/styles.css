@@ -11,5 +11,13 @@ blueTitle {
     여기에 원하는 속성들을 쓴다. 
 }
 
+CSS 는 Cascading Style Sheet다 
+즉, 순차적으로 읽기 때문에 가장 아래에, 가장 밑에 읽힌 스타일을 적용시킨다 
 
 */
+body {
+  background-color: red;
+}
+h1 {
+  color: blue;
+}
