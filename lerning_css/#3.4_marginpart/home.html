@@ -4,26 +4,50 @@
     <title>Home - My first website.</title>
 
     <style>
+      * {
+        border: 2px solid black;
+      }
       html {
         /* whole document를 말함 */
         background-color: tomato;
       }
       body {
         /* margin은 처음 값은 위, 아래 두번째 값은 왼쪽, 오른족을 뜻한다. */
-        margin: 20px 15px;
-
+        margin: 20px;
+        padding: 20px;
         background-color: thistle;
       }
       div {
-        margin: 10px 15px;
-        height: 150px;
-        width: 150px;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      /* id를 가르킬대는 #을 쓴다. */
+      #first {
         background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
+      span {
+        border-style: dotted;
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <div id="first">
+      <div id="second">
+        <div id="third"><span>hello?</span></div>
+      </div>
+    </div>
   </body>
 </html>
 <!-- block에만 있는 특징
@@ -50,7 +74,13 @@ block (box)의 아주 중요한 3가지 속성
     이것을 해소하기 위해서 padding이 필요하다. 
 
 2) padding
-
+  padding은 margin과 반대다. 
+  margin 은 box의 경계로 부터 '바깥' 의 공간인데
+  padding 은 box의 경꼐로부터 '안쪽'의 공간이다
 3) border
+  말 그대로 경계다. 
+  border는 속성이 많은데 많이 쓰이지 않는다. 한가지만 쓰임 왜? 안예뻐서...ㅋㅋㅋ
+  다른 종류는 진짜별로라서 한 종류의 border만 쓴다. 
+  solid < 경계...
 
 -->
