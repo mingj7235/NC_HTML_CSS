@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        height: 100vh; /* vh : view height 즉 스크린의 크기  */
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        flex-wrap: nowrap;
+        /* wrap을 해주면 chilren의 크기를 지켜준다. 그래서 스크린이 작아지면 
+        children의 크기가 줄어들지 않고 밑으로 내려가게된다. */
+      }
+      div {
+        /* 이경우에 flex container는 div가 되고 각각의 children은 글자가된다.  
+        만약 div의 flex를 지우면 글자는 flex되지 않는다. 부모의 부모가 flex컨테이너여도
+        직접적인 부모가 flex여야한다. */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        font-size: 28px;
+        color: whitesmoke;
+        background-color: teal;
+      }
+      #second {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>
+<!-- 
+display에서 inline-blcck의 문제점이 많이 발견된 후
+Flexbox를 고안했다. 
+어디든 자유롭게 box를 둘 수 있다.
+flexbox는 이름자체가 flexibe이다 2차원 레이아웃에서 아주 잘 작동한다.  
+지켜야할 규칙들이 있다 3가지의 rule
+
+1) 자식 엘리먼트에는 어떤 것도 적지 말아야 한다. 
+부모 엘리먼트에만 명시해야한다. 
+나중에 이해하게 될것 
+부모 엘리먼트에만 말을 한다 
+3개의 dvi를 가리키는 자식을 움직이고 싶으면 flex를 할 필요없다
+div의 부모에게 말하면된다 즉 body! body가 <div>의 부모다 
+  부모에게만 명시하면된다 
+  부모 엘리먼트를 flex container로 만들어야한다 
+  즉 body의 display가 flex를 주면된다
+  이제  body가 children을 제어할 수 있다
+※ Rule no1. flex는 부모의 display 속성에 해야한다 절대 자식에하는것이 아니다! 
+dispaly : flex 
+
+많은 속성들을 수정할 수 있게 된다 
+justify-content 등을 줘서 규칙적으로 둘 수 있다 
+모든 계산을 다 알아서 해준다. 
+얼마나 빈 공간을 줄지 이런것들을 자동적으로 계산해준다 so cool! 
+
+2) 주축 (main axis)과  3) 교차축 (cross axis)
+Flex Container는 두개의 축을 가지고 있다 이것이 main axis와 cross axis이다. 
+
+justify-content 는 주축 즉 평행(디폴트값이다)으로 움직이고 (main axis를 움직임)
+aling-items는 교차축 (디폴트는 수직)ㅇ으로 움직인다. (cross axis를 움직임)
+
+※디폴트 값은 바뀔 수 있다. 
+
+
+<디폴트값 바꿔보기>
+flex-direction 을 수정하면된다. 
+
+두가지의 value가 있다 row, column !
+디폴트 값은 row로 되어있다
+이걸 column으로 바꾸면 
+justify-content는 수직방향이되고 align-items는 수평방향이된다 . 
+
+두개가 반대가 된다 !! 
+
+row-reverse , column-reverse도 잇다 
+
+flex-wrap : 디폴트값은 nowrap 
+wrap으로 주면 children의 크기를 지켜준채로 아래로 내려가게된다. 
+
+flexbox는 박스를 자유롭게 가지고 놀수있다 
+
+main-axis와 cross-axis의 default값을 바꿀 때, flex-direction 이용.
+flex-direction은 디폴트값이 row (수평)
+이를 column 으로 바꿔주면 주축은 수직이, 교차축은 수평이 된다.
+이를 column-reverse로 바꿔주면 순서가 정반대가 된다.
+
+- flex container의 자식은 그 자체가 flex container가 될 수 있다.
+
+-wrapping
+flex-wrap: nowrap; -> 뭉개짐
+flex-wrap: wrap; -> 지정한 너비 유지
+flex-wrap: wrap-reverse; -> 좁아질 때 순서 반대로
+
+ -->
