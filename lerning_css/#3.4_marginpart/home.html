@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+
+    <style>
+      html {
+        /* whole document를 말함 */
+        background-color: tomato;
+      }
+      body {
+        /* margin은 처음 값은 위, 아래 두번째 값은 왼쪽, 오른족을 뜻한다. */
+        margin: 20px 15px;
+
+        background-color: thistle;
+      }
+      div {
+        margin: 10px 15px;
+        height: 150px;
+        width: 150px;
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
+<!-- block에만 있는 특징
+block을 inline으로 바꿀수있고, 반대도 가능하다. 
+이렇게 하는걸 CSS에서 display 속성을 줌으로써 가능하다.
+span 의 디폴트는 inline
+div의 디폴트는 block이다. 
+오.... 이런식으로 바꿀 수있다. 
+
+inline은 높이와 너비를 가질 수 없다. 
+이거 매우 중요한것인!
+그래서 div에게 display를 inlline으로 주면 width와 height를 줄 수없다. 
+다시말하면 block은 높이와 너비가 있다.
+
+block (box)의 아주 중요한 3가지 속성
+브라우저가 자동으로 속성을 주는 것들이 있다. 그중 하나가 box에 공간을 둔다는 것이다. 
+1) margin
+  box가 가지고 있는 특성중 하나. 
+  box의 border(경계)의 바깥에 있는 공간이다.
+
+  ※Collapsing margins : 마진의 경계가 위, 아래에서 합쳐진경우
+    언제 일어나는가? : div margin이 body margin과 같을 때일어나고 그때 두 box의 margin은 하나가 된다 
+    두 마진의 경계가 하나로 취급이 된다. 
+    이것을 해소하기 위해서 padding이 필요하다. 
+
+2) padding
+
+3) border
+
+-->
