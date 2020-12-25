@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+      }
+      .green {
+        background-color: green;
+        width:100px;
+        height: 50px;
+        position: absolute;
+        bottom : 10px;
+        right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class ="green"></div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+position
+    static : 레이아웃이 박스를 처음 위치하는 곳에 두는 것 즉 디폴트값
+    relative : relative를 가지면 top, bottom, left, right를 가질 수 있다.  
+          엘레멘트가 처음 위치한 곳을 기준으로 수정하는것
+          처음 위치를 가져다가 그 점을 기준으로 옮기는 것이다. (static을 기준으로 옮기는 것)
+            엘리먼트가 처음 놓인 자리에서 상하좌우로 움직이는 것이다. 
+              그러므로 첫 기준점이 매우 중요하다. 
+    absolute : 가장 가까운 relative 부모를 기준으로 이동시켜준다. 
+            green div의 부모는 div이지만 relative가 아니다. 
+              그러므로 body가 relative한 부모가 되는 것이다. 
+                absolut는 realative한 부모를 찾아야한다. 
+            div의 postion 을 relative로 주면 div를 기준으로 붙는다.
+            relative한 부모를 찾지 못한다면 body 기준으로 위치하게 된다. 

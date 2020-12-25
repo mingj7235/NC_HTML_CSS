@@ -19,7 +19,7 @@
       }
       #green {
         background-color: teal;
-        position: fixed;
+        position: static;
         opacity: 0.2;
       }
       #different {
@@ -27,6 +27,8 @@
         서로 다른 레이어에 있게 된다.
         전에는 같은 레이어에있다면 이제는 이것중 하나만 수정한다면 다른 레이어로 가게 된다.
          */
+        top: 50px;
+        position: fixed;
         background-color: wheat;
       }
     </style>
@@ -40,6 +42,8 @@
 <!-- 
 position
     fixed : 지정된 곳이 스크롤이 내려도 고정되어있다. 
+    /* top, left, right, bottem중 하나만 수정해주면 div가 위의 div를 무시한다. 그 위로간다.
+        서로 다른 레이어에 있게 된다.
     fixed로 고정된 위치는 초기에 위치한 자리다. 
     넷플릭스의 위에 고정된 메뉴같이 이럴때 사용된다.
     fixed를 사용하면 레이어를 부수고 다른 레이어에 위치해 있는다 
