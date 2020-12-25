@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      input {
+        border: 1px solid wheat;
+      }
+
+      input:required {
+        /* required된 input에 적용된다 */
+        border-color: tomato;
+      }
+
+      input[type="password"] {
+        background-color: black;
+      }
+
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>
+<!-- 
+pseudo selector
+
+attribute selector
+  : attribute를 통해 어떤 것이든 선택할 수 있게 해준다. 
+    
+  input [type="password"] {
+        background-color: thistle;
+      }
+    이렇게 attribute를 설정해서 어떤것이든 가져온 후 마음대로 꾸밀 수 있다. 
+    [] 안에 attribute를 넣으면 된다 
+
+  input [placeholder~="name"] {
+        background-color: pink;
+      }
+    
+    attribte안에 ~= 는 ""value를 가지고 있는 모든 것을 의미한다. 
+
+    attribute를 select하는 방법은 여러가지가 있다. 
+
+    그리고 띄어쓰기가 매우중요하네 허허허허허 엄청난걸 알았다 
+    이러면서 배우는거지 
+
+ -->

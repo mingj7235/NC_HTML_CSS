@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+
+      span + p {
+        color: blue;
+      }
+
+      span ~ p {
+        /* + 는 다음으로 오는 형제만 적용되는 것임 */
+        /* ~는 바로 뒤에 오지않을 때 쓸 수 있는게 ~ 이것이다.  */
+        color: gold;
+      }
+
+      /* p안에서 span을 찾아라! 라는의미임 */
+      /* p는 부모고 span은 child이다 */
+      /* div를 추가했는데, div를 써도 상관없다. 부모를 어디나 써도된다. 
+      하지만 상대적인 경로만 써도 가능하다 
+      구조(부모-관계의구조)가 존재하지 않으면 적용되지 않느다 */
+      div p span {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <address>seoul</address>
+      <address>pusan</address>
+      <p>
+        Lorem ipsum is a placeholder text commonly used to demonstrate the
+        visual form of a document or a typeface without relying on meaningful
+        content. <span> inside</span>
+      </p>
+    </div>
+  </body>
+</html>
+<!-- 
+  div의 바로 밑 자식에서 span을 찾아서 그것만 효과를 주는 방법
+  1)
+  div span {
+    text-decoration : underline;
+  }
+  이렇게하면 div밑에 있는 모든 span이 효과를 가진다
+  직접적인 부모가 아니어도 밑에있는 것들을 모두 css가 찾는다.
+
+  2) div > span {
+    text-decoration : underline;
+  }
+  이렇게하면 바로 밑!!! 을 찾게 되므로 바로 밑의 자식만 건들일수있게된다. 
+
+  형제에게 효과를 주는방법
+
+  p + span {
+    color: black;
+  
+  }
+  + 를 사용하면 형제에게 영향을  끼칠 수 있다. cool 
+
+
+  ※ > 를 사용하면 direct child를 찾고, + 를 사용하면 바로 코드상 밑에 있는 sibling을 찾게된다. 
+    ~ 은 형제인데 바로뒤에 오는게 아니라 찾게된다. 바로 뒤에 올 필요는 ㅇ벗다 
+ -->
