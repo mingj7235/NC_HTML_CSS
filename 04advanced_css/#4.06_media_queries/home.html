@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 50px;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      /* @media screen and (max-width: 600px) { */
+      /* @media screen and (min-width: 650px) and (max-width: 750px) { */
+      /* 400px보다 스크린이 작으면 아래의 내용을 보여줘! 라는것임*/
+      /* 엄청 cool 하다 ! 이 한줄로 스크린의 크기를 감지해서 원하는 css를 실현할수있다  */
+      /* div {
+          background-color: tomato;
+        }
+      } */
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+        /* orientation : 가로 세로 모드인지..오 쩐다 landscape는 가로 portrait 는 세로임 */
+        div {
+          background-color: wheat;
+        }
+      }
+      /* @media screen and (min-width: 1200px) {
+        div {
+          background-color: turquoise;
+        }
+      } */
+      span {
+        font-size: 36px;
+      }
+
+      /* 가로 모드라면 diplay를 none으로 줘서 경고메세지가 나오지 않도록 해주는 것임 */
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>Please flip your phone :(</span>
+  </body>
+</html>
+<!-- 
+Media Query
+
+오직 CSS만을 이용해서 스크린의 사이즈를 알 수 있는 방법
+웹사이트를 보고있는 사용지들의 스크린 사이즈!
+아이폰으로 보거나 큰 화면으로 볼때 혹은 가로모드로 볼때 이것을 모두 CsS로 감지할 수 있고
+우리의 CSS를 사이즈에 따라서 바꿀 수있다! cool !
+-> Media query 라고한다
+브라우저에게 말하는것 ! 스크린 크기가 ~에서 ~정도이면 이 CSS를 보여줘! 라고 말하는것임 
+@media screen의 조건이 true라면 아래의 css를 보여주는 것이다.  (screen은 media의 타입이다 )
+조건문 같은 것임! 
+그 안에 css를 쓰는데 element를 견결해서 써야한다 
+그리고 and를 사용해서 연결할 수 있다 cool한 css다 
+
+
+
+
+ -->

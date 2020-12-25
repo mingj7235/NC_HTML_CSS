@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        /* transition: background-color 10s ease-in-out, color 5s ease-in-out; */
+        transition: all 1s ease-in-out;
+      }
+      a:hover {
+        border-radius: 20px;
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+  </body>
+</html>
+<!-- 
+  transition
+  어떤 상태에서 다른 상태로의 변화! 를 보내주는 애니매이션이다
+
+  rule1> transtion은 state가 없는 요소에 붙어야한다
+        처음 생긴곳에 있어야한다 
+        state에 transition을 준다면 변화를 준것(예를들면 hover라면 마우스를 갖다 댄것)을 그만할경우(마우스를 뗄경우)
+        원래상태로 바로 돌아간다
+  rule2> transtion 에 변화를 준것들은 state에 들어있는것들이 기준이 되어 바뀌는것이다
+        바뀌는 것들에 한정하여 transition 이 일어날 수 있다
+ -->

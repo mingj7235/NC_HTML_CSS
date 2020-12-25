@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        background-color: black;
+        height: 1000vh;
+        margin: 50px;
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        /* transform: rotateZ(30deg); */
+        /* rotate는 3d로 변화시켜서 축을 돌리는 것임 */
+
+        /* transform: scale(2, 2);크기를 키우는 것임 */
+        /* transform: translateX(300px);
+         */
+        transition: transform 5s ease-in-out;
+      }
+      img:hover {
+        transform: rotateX(360deg) scale(0.5);
+      }
+      span {
+        color: white;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="imgs/applecolor02.jpg" />
+    <span>apple image</span>
+  </body>
+</html>
+<!-- 
+  transformation
+
+  한 요소를 말 그대로 변형시킬수 있기 때문에 개쩐다
+  css로 3D까지 할수 있기 때문에 cool한것임
+  transform 안에 엄청나게 많은 기능들이 있다
+
+  transformation은 box element를 변형시키지 않는다. 
+  즉, 옆에 sibling들에게 영향을 끼치지 않는다. 
+  margin, padding이 적용되지 않는다. 일종의 3D transformation이기 때문이다. 
+  margin이나 padding을 주기위해서 tarnslateX, trnasLateY 를 사용하는것이 아니다!
+  다른 요소의 box를 변형시키지 않고 원하는 요소를 이동시키기 위해서 사용하는 것이다. 
+  trransformation 은 페이지의 픽셀의 다른 부분에서 일어난다. 
+  transformatino은 box차원에서 일어나지 않는다. 
+  tronsformation 을 결합 가능하다!
+  CSS의 3D는 GPU로 돌아간다 즉 3D작업을 할 수 있다
+  transformation 은 이것 역시 엄청나게 많은 document가 있다 확인해서 combine할 수 있다 
+  transition 과 transformtion 을 합친다면 아름다운 애니매이셔능ㄹ 만들 수 있다 
+
+
+
+ -->

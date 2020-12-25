@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 200vh;
+        margin: 50px;
+      }
+      /* 애니메이션! */
+      @keyframes superSexyCoinFlip {
+        /* 지금은 3단계로 0, 50, 100으로 나눴지만, 내마음대로 스텝을 다룰 수있다  */
+        /* 0% {
+          transform: rotateY(0);
+        }
+        50% {
+          transform: rotateY(180deg) translateY(100px);
+        }
+        100% {
+          transform: rotateY(0) translateY(0px);
+        } */
+
+        0% {
+          transform: rotateY(0);
+        }
+        25% {
+          transform: scale(0.3);
+        }
+        50% {
+          border-radius: 0px;
+          transform: rotateY(180deg) translateY(100px);
+          border-color: silver;
+          opacity: 0;
+        }
+        75% {
+          transform: scale(1.8);
+          /* border-radius: 20px; */
+        }
+        100% {
+          transform: rotateY(0) translateY(0px);
+        }
+      }
+
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="imgs/applecolor02.jpg" />
+  </body>
+</html>
+<!-- 
+  animation
+
+  사실, transtion과 transform은 애니메이션이아니다. 
+  state에 따라 그것을 애니매이션화 하는 것일뿐이다
+
+  계속 재생되는 애니매이션을 얻기 위해서는? 이게 애니메이션이다!
+  원하는만큼 만들고 재생시킬 수 있기 때문에 very cool 하다 
+
+  @keyframes 애니매이션이름 {
+    이곳에 옵션을 쓰면된다. 
+    2가지 옵션이 있음
+  }
+  
+  애니매이션 옵션 1
+    from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+          => 0, 100% 처음과 결과 두가지만 필요하다면 이렇게 쓰면된다
+
+  애니매이션 옵션 2 
+   0% {
+          transform: rotateY(0);
+        }
+        50% {
+          transform: rotateY(180deg) translateY(100px);
+        }
+        100% {
+          transform: rotateY(0);
+        }
+
+        3단계로 나눠서 움직이도록 하는 것이다 
+        5단계든 100단계든 내 마음대로 스텝을 만들 수 있다 
+ -->

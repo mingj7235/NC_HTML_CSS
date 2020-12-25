@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - My first website.</title>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <style>
+      body {
+        background-color: black;
+        height: 1000vh;
+        margin: 50px;
+      }
+
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        /* transition: background-color 10s ease-in-out, color 5s ease-in-out; */
+        transition: all 1s cubic-bezier(0.6, -0.5, 0.735, 0.045);
+      }
+      a:hover {
+        border-radius: 20px;
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+  </body>
+</html>
+<!-- 
+  transition
+  
+  recap : transition 은 state에 따라 바뀌는 property를 갖고 있으면 사용되는 것이다 !!! 
+
+ ease-in fuctions -> matthewlein 에서 확인할 수 있다 (웹사이트) 많은 효과들
+ 
+ cubic-bezier 는 나만의 curves를 만들 수있다 나만의 감속, 가속을 만들 수 있다 
+ ease funcions들은 가속을 어떻게 할것인지에 대한 효과들이다 매우 sentimental하다 
+ 이걸 사용하면 너무 재미있다 
+ 하지만 대부분 ease-in-out을 많이 쓰게된다 
+
+ -->
